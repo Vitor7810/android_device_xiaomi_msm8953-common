@@ -110,13 +110,13 @@ caps: NET_BIND_SERVICE
 mode: 0755
 user: AID_SYSTEM
 group: AID_RADIO
-caps: NET_BIND_SERVICE BLOCK_SUSPEND WAKE_ALARM
+caps: WAKE_ALARM
 
 [system/vendor/bin/imsrcsd]
 mode: 0755
 user: AID_SYSTEM
 group: AID_RADIO
-caps: NET_BIND_SERVICE BLOCK_SUSPEND WAKE_ALARM
+caps: WAKE_ALARM
 
 [vendor/bin/cnd]
 mode: 0755
@@ -201,3 +201,4 @@ mode: 0771
 user: AID_MEDIA
 group: AID_MEDIA
 caps: 0
+
