@@ -169,28 +169,6 @@ set_light_backlight(struct light_device_t* dev,
     return err;
 }
 
-static int
-set_light_backlight_ext(struct light_device_t* dev,
-        struct light_state_t const* state)
-{
-    int err = 0;
-
-    if(!dev) {
-        return -1;
-    }
-
-    int brightness = state->color & 0x00ffffff;
-    pthread_mutex_lock(&g_lock);
-
-    if (brightness >= 0 && brightness <= g_brightness_max) {
-        set_brightness_ext_level(brightness);
-    }
-
-    pthread_mutex_unlock(&g_lock);
-
-    return err;
-}
-
 static int set_rgb_led_brightness(enum rgb_led led, int brightness)
 {
     char file[48];
