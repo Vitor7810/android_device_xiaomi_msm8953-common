@@ -55,14 +55,17 @@ vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|d60fdc9dcf9565a60a2a5dffecba169
 vendor/lib64/com.qualcomm.qti.ant@1.0.so|3a19c81d66ef1190d0b2f361420d5cbf707cc600
 
 # Bluetooth
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/bin/hci_qcomm_init
 vendor/bin/wcnss_filter
-vendor/lib/libbtnv.so
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/libbtnv.so
 vendor/lib64/libbt-hidlclient.so
 
 # Bluetooth (shared dependencies)
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
+vendor/lib64/com.qualcomm.qti.ant@1.0_vendor.so
 
 # Camera firmware
 vendor/firmware/cpp_firmware_v1_8_0.fw
